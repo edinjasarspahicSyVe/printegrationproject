@@ -34,7 +34,7 @@ public abstract class AbstractMatcher<T> implements Matcher<T> {
   public Matcher<T> or(Matcher<? super T> other) {
     return new OrMatcher<T>(this, other);
   }
-
+//first pr to remove compare message 
   private static class AndMatcher<T> extends AbstractMatcher<T> implements Serializable {
     private final Matcher<? super T> a, b;
 
